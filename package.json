@@ -1,0 +1,146 @@
+{
+  "name": "interval-controller",
+  "version": "0.1.0",
+  "description": "interval controller",
+  "source": "src/index.ts",
+  "types": "dist/types.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "import": "./dist/modern/browser/esm/index.js",
+        "require": "./dist/modern/browser/cjs/index.js"
+      },
+      "node": {
+        "import": "./dist/modern/node/esm/index.js",
+        "require": "./dist/modern/node/cjs/index.js"
+      },
+      "import": "./dist/modern/browser/esm/index.js",
+      "require": "./dist/modern/browser/cjs/index.js",
+      "types": "./dist/types.d.ts"
+    },
+    "./legacy": {
+      "browser": {
+        "import": "./dist/legacy/browser/esm/index.js",
+        "require": "./dist/legacy/browser/cjs/index.js"
+      },
+      "node": {
+        "import": "./dist/legacy/node/esm/index.js",
+        "require": "./dist/legacy/node/cjs/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dafengzhen/interval-controller.git"
+  },
+  "keywords": [
+    "interval",
+    "controller"
+  ],
+  "author": "dafengzhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dafengzhen/interval-controller/issues"
+  },
+  "homepage": "https://github.com/dafengzhen/interval-controller#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@parcel/packager-ts": "^2.15.4",
+    "@parcel/transformer-typescript-types": "^2.15.4",
+    "eslint": "^9.31.0",
+    "eslint-plugin-perfectionist": "^4.15.0",
+    "globals": "^16.3.0",
+    "parcel": "^2.15.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  },
+  "targets": {
+    "modern-browser-esm": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/modern/browser/esm",
+      "engines": {
+        "browsers": "> 0.3%, last 2 versions, Firefox ESR, not dead"
+      }
+    },
+    "modern-browser-cjs": {
+      "context": "browser",
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/modern/browser/cjs",
+      "engines": {
+        "browsers": "> 0.3%, last 2 versions, Firefox ESR, not dead"
+      }
+    },
+    "modern-node-esm": {
+      "context": "node",
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/modern/node/esm",
+      "engines": {
+        "browsers": "> 0.3%, last 2 versions, Firefox ESR, not dead"
+      }
+    },
+    "modern-node-cjs": {
+      "context": "node",
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/modern/node/cjs",
+      "engines": {
+        "browsers": "> 0.3%, last 2 versions, Firefox ESR, not dead"
+      }
+    },
+    "legacy-browser-esm": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/legacy/browser/esm",
+      "engines": {
+        "browsers": "> 0.3%, edge >= 88, firefox >= 78, chrome >= 87, safari >= 14"
+      }
+    },
+    "legacy-browser-cjs": {
+      "context": "browser",
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/legacy/browser/cjs",
+      "engines": {
+        "browsers": "> 0.3%, edge >= 88, firefox >= 78, chrome >= 87, safari >= 14"
+      }
+    },
+    "legacy-node-esm": {
+      "context": "node",
+      "outputFormat": "esmodule",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/legacy/node/esm",
+      "engines": {
+        "browsers": "> 0.3%, edge >= 88, firefox >= 78, chrome >= 87, safari >= 14"
+      }
+    },
+    "legacy-node-cjs": {
+      "context": "node",
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "optimize": true,
+      "distDir": "dist/legacy/node/cjs",
+      "engines": {
+        "browsers": "> 0.3%, edge >= 88, firefox >= 78, chrome >= 87, safari >= 14"
+      }
+    }
+  }
+}
