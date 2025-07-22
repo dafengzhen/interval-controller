@@ -1,6 +1,6 @@
 {
   "name": "interval-controller",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "interval controller",
   "source": "src/index.ts",
   "types": "dist/types.d.ts",
@@ -29,6 +29,9 @@
       }
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
