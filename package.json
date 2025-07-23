@@ -1,6 +1,6 @@
 {
   "name": "interval-controller",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "interval controller",
   "source": "src/index.ts",
   "types": "dist/types.d.ts",
